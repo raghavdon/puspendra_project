@@ -1,0 +1,356 @@
+driver
+(       
+   name "stage"
+   plugin "stageplugin"
+
+   provides ["simulation:0" ]
+
+   worldfile "sim.world"  
+)
+driver
+( 
+  name "stage"
+  provides [ "position2d:0"]
+  model "goal1" 
+)
+
+driver
+( 
+  name "stage"
+  provides [ "position2d:1"]
+  model "goal2" 
+)
+
+driver
+( 
+  name "stage"
+  provides [ "position2d:2"]
+  model "goal3" 
+)
+
+driver
+( 
+  name "stage"
+  provides [ "position2d:3"]
+  model "goal4" 
+)
+
+driver
+( 
+  name "stage"
+  provides [ "position2d:4"]
+  model "goal5" 
+)
+
+driver
+( 
+  name "stage"
+  provides [ "position2d:5"]
+  model "goal6" 
+)
+
+driver
+( 
+  name "stage"
+  provides [ "position2d:6"]
+  model "goal7" 
+)
+
+driver
+( 
+  name "stage"
+  provides [ "position2d:7"]
+  model "goal8" 
+)
+
+driver
+( 
+  name "stage"
+  provides [ "position2d:8"]
+  model "goal9" 
+)
+
+driver
+( 
+  name "stage"
+  provides [ "position2d:9"]
+  model "goal10" 
+)
+
+driver
+( 
+  name "stage"
+  provides [ "position2d:10"]
+  model "goal11" 
+)
+
+driver
+( 
+  name "stage"
+  provides [ "position2d:11"]
+  model "goal12" 
+)
+
+driver
+( 
+  name "stage"
+  provides [ "position2d:12"]
+  model "goal13" 
+)
+
+driver
+( 
+  name "stage"
+  provides [ "position2d:13"]
+  model "goal14" 
+)
+
+driver
+( 
+  name "stage"
+  provides [ "position2d:14"]
+  model "goal15" 
+)
+
+driver
+( 
+  name "stage"
+  provides [ "position2d:15"]
+  model "goal16" 
+)
+
+
+driver
+( 
+  name "stage"
+  provides [ "position2d:21"]
+  model "b1" 
+)
+driver
+( 
+  name "stage"
+  provides [ "position2d:22"]
+  model "b2" 
+)
+driver
+( 
+  name "stage"
+  provides [ "position2d:23"]
+  model "b3" 
+)
+driver
+( 
+  name "stage"
+  provides [ "position2d:24"]
+  model "b4" 
+)
+driver
+( 
+  name "stage"
+  provides [ "position2d:25"]
+  model "b5" 
+)
+driver
+( 
+  name "stage"
+  provides [ "position2d:26"]
+  model "b6" 
+)
+driver
+( 
+  name "stage"
+  provides [ "position2d:27"]
+  model "b7" 
+)
+driver
+( 
+  name "stage"
+  provides [ "position2d:28"]
+  model "b8" 
+)
+driver
+( 
+  name "stage"
+  provides [ "position2d:29"]
+  model "b9" 
+)
+driver
+( 
+  name "stage"
+  provides [ "position2d:30"]
+  model "b10" 
+)
+driver
+( 
+  name "stage"
+  provides [ "position2d:31"]
+  model "b11" 
+)
+driver
+( 
+  name "stage"
+  provides [ "position2d:32"]
+  model "b12" 
+)
+driver
+( 
+  name "stage"
+  provides [ "position2d:33"]
+  model "b13" 
+)
+driver
+( 
+  name "stage"
+  provides [ "position2d:34"]
+  model "b14" 
+)
+driver
+( 
+  name "stage"
+  provides [ "position2d:35"]
+  model "b15" 
+)
+driver
+( 
+  name "stage"
+  provides [ "position2d:36"]
+  model "b16" 
+)
+driver
+( 
+  name "stage"
+  provides [ "position2d:37"]
+  model "b17" 
+)
+driver
+( 
+  name "stage"
+  provides [ "position2d:38"]
+  model "b18" 
+)
+driver
+( 
+  name "stage"
+  provides [ "position2d:39"]
+  model "b19" 
+)
+driver
+( 
+  name "stage"
+  provides [ "position2d:40"]
+  model "b20" 
+)
+
+
+driver
+( 
+  name "stage"
+  provides [ "6666:position2d:0" "6666:ranger:0" "6666:speech:0" ]
+  model "robot1" 
+)
+driver
+( 
+  name "stage"
+  provides [ "6667:position2d:0" "6667:ranger:0" "6667:speech:0"  ]
+  model "robot2" 
+)
+driver
+( 
+  name "stage"
+  provides [ "6668:position2d:0" "6668:ranger:0" "6668:speech:0"  ]
+  model "robot3" 
+)
+
+driver
+( 
+  name "stage"
+  provides [ "6669:position2d:0" "6669:ranger:0"  ]
+  model "robot4" 
+)
+driver
+( 
+  name "stage"
+  provides [ "6670:position2d:0" "6670:ranger:0"  ]
+  model "robot5" 
+)
+
+driver
+( 
+  name "stage"
+  provides [ "6671:position2d:0" "6671:ranger:0"  ]
+  model "robot6" 
+)
+
+driver
+( 
+  name "stage"
+  provides [ "6672:position2d:0" "6672:ranger:0"  ]
+  model "robot7" 
+)
+driver
+( 
+  name "stage"
+  provides [ "6673:position2d:0" "6673:ranger:0"  ]
+  model "robot8" 
+)
+
+driver
+( 
+  name "stage"
+  provides [ "6674:position2d:0" "6674:ranger:0"  ]
+  model "robot9" 
+)
+
+driver
+( 
+  name "stage"
+  provides [ "6675:position2d:0" "6675:ranger:0"  ]
+  model "robot10" 
+)
+
+
+driver
+( 
+  name "stage"
+  provides [ "6676:position2d:0" "6676:ranger:0"  ]
+  model "robot11" 
+)
+
+driver
+( 
+  name "stage"
+  provides [ "6677:position2d:0" "6677:ranger:0"  ]
+  model "robot12" 
+)
+
+driver
+( 
+  name "stage"
+  provides [ "6678:position2d:0" "6678:ranger:0"  ]
+  model "robot13" 
+)
+
+driver
+( 
+  name "stage"
+  provides [ "6679:position2d:0" "6679:ranger:0"  ]
+  model "robot14" 
+)
+
+driver
+( 
+  name "stage"
+  provides [ "6680:position2d:0" "6680:ranger:0"  ]
+  model "robot15" 
+)
+
+driver
+( 
+  name "stage"
+  provides [ "6681:position2d:0" "6681:ranger:0"  ]
+  model "robot16" 
+)
+
+
+
+

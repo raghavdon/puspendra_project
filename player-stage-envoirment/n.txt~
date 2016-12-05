@@ -1,0 +1,887 @@
+package aaa_piku;
+
+import java.util.Random;
+
+import javax.swing.event.TreeWillExpandListener;
+
+import javaclient3.PlayerClient;
+import javaclient3.PlayerException;
+import javaclient3.Position2DInterface;
+import javaclient3.RangerInterface;
+import javaclient3.structures.PlayerConstants;
+
+public class single_qlearning {
+	//private static final int n = 20;
+	private static final int n_x = 20;
+	private static final int n_y = 10;
+	
+	private static final int Q_SIZE= n_x*n_y;
+	private static int dest = Q_SIZE-1;
+	
+	private static final int[] initp = {20,40};
+	private static final int[] initq = {0,10};
+	 private static int[] currentState = {20,40};
+	
+    private static final double GAMMA = 0.5;
+    private static final double alpha = 0.5;
+    private static final double w = 1;
+    private static final int ITERATIONS = 1000;
+    
+    private static int ro = 0;
+    private static int rom = 2;
+    
+    private static final int INITIAL_STATES[] = new int[Q_SIZE];
+    
+    private static  int R[][] = new int[Q_SIZE][Q_SIZE];
+    //private static  int neib[] = {-1,-1};
+    
+    private static double q1[][][] = new double[rom][Q_SIZE][Q_SIZE];
+   
+    private static double e1[][][] = new double[rom][Q_SIZE][Q_SIZE];
+   
+   
+    
+   
+    private static  PlayerClient[]  robot = new PlayerClient[17];
+    
+    private static Position2DInterface[] posi=new Position2DInterface[16];
+    private static Position2DInterface[] block=new Position2DInterface[10];
+    private static Position2DInterface goal=null;
+    private static RangerInterface[]  rngi=new RangerInterface[16];
+    
+    
+    public static void initin(){
+    	
+    	for(int i=0;i<Q_SIZE;i++){
+    		
+    		INITIAL_STATES[i]=i;
+	    		for(int j=0;j<Q_SIZE;j++){
+	    			
+        		if((j==i+1 || j==i+n_x || j==i-1 || j==i-n_x)){
+        	
+        			if((j% n_x==0 && i==j-1) || (i% n_x==0 && j==i-1)){
+        			R[i][j]=-1;
+        			}
+        		else{
+        		R[i][j]=0;
+        		}
+        		}
+    			
+        		else{
+        			R[i][j]=-1;
+        		  }
+    			
+        	}
+    		
+	    		
+    	}
+    	R[dest-1][dest]=10;
+    	
+    	R[dest-n_x][dest]=10;
+    	
+    
+    	if(dest < (n_y-1)*n_x){
+    	R[dest+n_x][dest]=10;
+    	
+    }
+   
+    	if(dest%n_x <n_x-1){
+    	R[dest+1][dest]=10;
+    	
+    }
+    
+    	
+    }
+    
+    
+    
+    
+    
+	 public static void main(String[] args) throws Exception {
+		 try {	 
+        	 
+ for(int y=0;y<17;y++){
+            	 
+	 robot[y]  = new PlayerClient ("localhost", 6665+y);
+             }
+             
+             goal= robot[0].requestInterfacePosition2D (0, PlayerConstants.PLAYER_OPEN_MODE);
+            
+             for(int y=0;y<16;y++){
+            	 
+            	 posi[y] = robot[y+1].requestInterfacePosition2D (0, PlayerConstants.PLAYER_OPEN_MODE);
+                 rngi[y] = robot[y+1].requestInterfaceRanger     (0, PlayerConstants.PLAYER_OPEN_MODE);
+                
+             }
+             	for(int z=0;z<10;z++){
+            	 
+            	 block[z] = robot[0].requestInterfacePosition2D (z+1, PlayerConstants.PLAYER_OPEN_MODE);
+             }
+        
+         } catch (PlayerException e) {
+             System.err.println ("myrob: > Error connecting to Player: ");
+             System.err.println ("    [ " + e.toString() + " ]");
+             System.exit (1);
+         }
+		 for(int y=0;y<17;y++){
+        	 
+			 robot[y].runThreaded (-1, -1);
+		             }
+         
+         
+         int x1=(int) goal.getX();
+         int y1=(int) goal.getY();
+         
+         dest=((n_x*y1)+x1)-1;
+         
+         
+         
+         
+         
+         
+         
+         System.out.println(dest);
+		 initin();
+		 
+		 for(int z1=0;z1<10;z1++){
+        	 
+        	while(!block[z1].isDataReady()){
+        		Thread.sleep(20);
+        	}
+			 int xb=(int) block[z1].getX();
+	         int yb=(int) block[z1].getY();
+	         
+	         if(xb>=0 && yb>=0){
+	        	 int bo=(n_x*yb)+xb;
+	        	 
+	        		R[bo-1][bo]=-1;
+	        		R[bo][bo-1]=-1;
+	        		
+	            //	R[bo-n_x][bo]=-1;
+	            //	R[bo][bo-n_x]=-1;
+	            
+	            	if(bo < (n_y-1)*n_x){
+	            	R[bo+n_x][bo]=-1;
+	            	R[bo][bo+n_x]=-1;
+	            }
+	           
+	            	if(bo %n_x <(n_x-1)){
+	            	R[bo+1][bo]=-1;
+	            	R[bo][bo+1]=-1;
+	            }
+	            
+	         }
+	         
+	         
+         }
+    
+		 
+		 
+		 
+		 train();
+		 for(ro=0;ro<rom;ro++){
+		 test();
+		 }
+		 
+		 Thread[] t = new Thread[8];
+		 
+		
+			 
+			 t[0]=new Thread(new Runnable() {
+				  @Override
+				    public void run() {
+				    	 try {
+								rob1(0);
+							} catch (Exception e1) {
+								// TODO Auto-generated catch block
+								e1.printStackTrace();
+							}
+				    }
+				});
+			 t[1]=new Thread(new Runnable() {
+				  @Override
+				    public void run() {
+				    	 try {
+								rob1(1);
+							} catch (Exception e1) {
+								// TODO Auto-generated catch block
+								e1.printStackTrace();
+							}
+				    }
+				});
+			 t[2]=new Thread(new Runnable() {
+				  @Override
+				    public void run() {
+				    	 try {
+								rob1(2);
+							} catch (Exception e1) {
+								// TODO Auto-generated catch block
+								e1.printStackTrace();
+							}
+				    }
+				});
+			 t[3]=new Thread(new Runnable() {
+				  @Override
+				    public void run() {
+				    	 try {
+								rob1(3);
+							} catch (Exception e1) {
+								// TODO Auto-generated catch block
+								e1.printStackTrace();
+							}
+				    }
+				});
+			 
+			 t[4]=new Thread(new Runnable() {
+				  @Override
+				    public void run() {
+				    	 try {
+								rob2(4);
+							} catch (Exception e1) {
+								// TODO Auto-generated catch block
+								e1.printStackTrace();
+							}
+				    }
+				});
+			 t[5]=new Thread(new Runnable() {
+				  @Override
+				    public void run() {
+				    	 try {
+								rob2(5);
+							} catch (Exception e1) {
+								// TODO Auto-generated catch block
+								e1.printStackTrace();
+							}
+				    }
+				});
+			 t[6]=new Thread(new Runnable() {
+				  @Override
+				    public void run() {
+				    	 try {
+								rob2(6);
+							} catch (Exception e1) {
+								// TODO Auto-generated catch block
+								e1.printStackTrace();
+							}
+				    }
+				});
+			 t[7]=new Thread(new Runnable() {
+				  @Override
+				    public void run() {
+				    	 try {
+								rob2(7);
+							} catch (Exception e1) {
+								// TODO Auto-generated catch block
+								e1.printStackTrace();
+							}
+				    }
+				});
+			 
+		
+		 t[0].start();	 
+		 t[1].start(); 
+		 t[2].start();
+		 t[3].start();
+		 
+		 t[4].start();	 
+		 t[5].start(); 
+		 t[6].start();
+		 t[7].start();
+		 
+		 
+		 for(ro=0;ro<rom;ro++){
+			 
+			 
+			 
+			//rob1(b);
+			 }
+	    }
+	
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 private static double maximum(final int State, final boolean ReturnIndexOnly)
+	    {
+	        // If ReturnIndexOnly = True, the Q matrix index is returned.
+	        // If ReturnIndexOnly = False, the Q matrix value is returned.
+		 
+		 int winner = State;
+		 
+		  
+	        boolean foundNewWinner = false;
+	        boolean done = false;
+
+	        while(!done)
+	        {
+	            foundNewWinner = false;
+	            for(int i = 0; i < Q_SIZE; i++)
+	            {
+	                if(i != winner){   
+	                	// Avoid self-comparison.
+	                	if(q1[ro][State][i] > q1[ro][State][winner]){
+	                        winner = i;
+	                        foundNewWinner = true;
+	                    }
+	                	
+	                   
+	                }
+	            }
+
+	            if(foundNewWinner == false){
+	                done = true;
+	            }
+	        }
+
+	        if(ReturnIndexOnly == true){
+	            
+	            
+	            	return winner;
+	            
+	        }
+	        else{
+	        	return q1[ro][State][winner];
+	        	
+	        }
+	        
+	        
+	    }
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 private static void test() throws InterruptedException
+	    {
+		 System.out.println("Shortest routes from initial states:");
+		 
+		 currentState[ro] = initp[ro];
+	           
+	            
+		 		
+	            int newState = 0;
+	            
+	            while(currentState[ro] != dest)
+	            	
+	            { newState = (int) maximum(currentState[ro], true);
+	              System.out.print(currentState[ro] + ", ");
+	              currentState[ro] = newState;
+	            }
+	            System.out.print(dest+"\n");
+	        
+
+	        return;
+	    }
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 private static void train(){
+
+		    
+		    System.out.println(initp[0]+"-*"+initp[1]); 
+		 for(int j = 0; j < ITERATIONS; j++)
+	        {
+			 
+			 for(int y=0;y<rom;y++){
+				 currentState[y]=initp[y];
+			 }
+			 
+			 for(ro=0;ro<rom;ro++){
+				 
+				 
+				 
+				 while(currentState[ro] != dest)
+	       {
+	    	 int possibleAction = 0;
+	    	 int action = 0;
+	    	  boolean choiceIsValid = false;
+	    	  while(choiceIsValid == false)
+	    	 	        {	
+	    	 	        	
+	    	 	            // Get a random value between 0(inclusive) and 6(exclusive).
+	    	 	            action = new Random().nextInt(Q_SIZE);
+	    	 	           //System.out.println(action);
+	    	 	            if(R[currentState[ro]][action] > -1){
+	    	 	            	//System.out.println("end");
+	    	 	                choiceIsValid = true;
+	    	 	          
+	    	 	            }
+	    	 	        
+	    	 	        
+	    	 	        }
+	    	 	       possibleAction = action;
+
+	    		        if(R[currentState[ro]][possibleAction] >= 0){
+	    		        	int iu=0;
+	    		        	double N=0;
+	    		        	for(int u=0;u<rom;u++){
+	    		        		//System.out.println(currentState[u]+"--"+currentState[ro]);
+	    		        		if(currentState[u]==currentState[ro]+1 || currentState[u]==currentState[ro]-1 || currentState[u]==currentState[ro]+n_x || currentState[u]==currentState[ro]-n_x){
+	    		        			//neib[iu]=u;
+	    		        			N=N+e1[u][currentState[ro]][possibleAction];
+	    		        			//System.out.println(currentState[u]+"--*"+currentState[ro]);
+	    		        			iu++;
+	    		        		}
+	    		        	}
+	    		       
+	    		        		e1[ro][currentState[ro]][possibleAction] = q1[ro][currentState[ro]][possibleAction]+ alpha*(R[currentState[ro]][possibleAction]+ (GAMMA * maximum(possibleAction, false))- q1[ro][currentState[ro]][possibleAction]);
+	    		        		
+	    		        		
+	    		        		
+	    		        		q1[ro][currentState[ro]][possibleAction] = (w*e1[ro][currentState[ro]][possibleAction])+((0)*N);
+	    		        	
+	    		        	
+	    		        
+	    		        	 currentState[ro] = possibleAction;
+	    		        	 
+	    		        }
+	    		        
+	         
+	        }//
+	    	 
+			 }
+	        }
+		 //System.out.println(initp[0]+"-"+initp[1]);
+		/* for(ro=1;ro<=2;ro++){
+		 if(ro==1){
+		 
+			 for(int i1 = 0; i1 < Q_SIZE; i1++)
+	        {
+	            for(int j1 = 0; j1 < Q_SIZE; j1++)
+	            {
+	                System.out.print(q1[0][i1][j1] + ",\t");
+	            } // j
+	            System.out.print("\n");
+	        } // i
+	        System.out.print("\n");
+	       System.out.println("***************************q1************************************");
+		 }
+		 else if(ro==2){
+			 for(int i1 = 0; i1 < Q_SIZE; i1++)
+		        {
+		            for(int j1 = 0; j1 < Q_SIZE; j1++)
+		            {
+		                System.out.print(q1[1][i1][j1] + ",\t");
+		            } // j
+		            System.out.print("\n");
+		        } // i
+		        System.out.print("\n");
+		       System.out.println("***************************q2************************************");
+			 } 
+	 
+		 }*/
+		 
+	 }
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	  private static void rob1(int b) throws Exception{
+          
+		  int[] tst=new int[4];
+          	while(true){
+    	
+    	//while(!posi[0].isDataReady()){
+    		//Thread.sleep(10);
+    	//}
+    	
+    	 	int xx=(int) posi[0].getX();
+			int yy=(int) posi[0].getY();
+			
+			int cp=(n_x*yy)+xx;
+			
+			int xx1=(int) posi[4].getX();
+			int yy1=(int) posi[4].getY();
+			
+			int cp1=(n_x*yy1)+xx1;
+			
+			int winner = cp;
+			
+			tst[0]=cp+1;
+			tst[1]=cp-1;
+			tst[2]=cp+n_x;
+			tst[3]=cp-n_x;
+			
+			for(int i=0; i<4; i++)
+            {
+                if(tst[i]>=0){   
+                	if(q1[0][cp][tst[i]] > q1[0][cp][winner]){
+                        winner = tst[i];
+                    }
+               }
+            }
+			
+			
+		//	System.out.println(cp);
+			
+			int np = winner;
+			
+		//	System.out.println(np);
+			
+			
+			double ang=posi[0].getYaw();
+			
+			
+			
+			
+				 
+        	
+ 	       //for 0 
+				
+				 if(cp==dest){
+		 	        	break;
+		 	 	    	
+		 	        }
+ 	        
+				 else if(ang>-0.3 && ang<0.3)
+ 	        {
+ 	        
+ 	        	
+ 	        	if(np-cp==1 && cp1-cp!=1){
+ 	        	posi[b].setSpeed(1, 0);
+ 	        
+ 	        }
+ 	        
+ 	        else if(np-cp==n_x){
+ 	        	posi[b].setSpeed(0, 1.57);
+ 	        
+ 	        }
+ 	        
+ 	       else if(np-cp==-1){
+ 	        	posi[b].setSpeed(0, 3.14);
+ 	        	
+ 	        	
+ 	        }
+ 	      else if(np-cp==-n_x){
+ 	        	posi[b].setSpeed(0,-1.57);
+ 	        	
+ 	        	
+ 	        }
+ 	             	 	        
+ 	        }
+ 	        
+ 	        
+ 	        //// for 90
+ 	        
+ 	        else if (ang>1.5 && ang<1.6){
+ 	        	
+ 	        	 if(np-cp==n_x && cp1-cp!=n_x){
+ 	 	        	posi[b].setSpeed(1, 0);
+ 	 	        
+ 	 	        }
+ 	 	        
+ 	 	        else if(np-cp==-1){
+ 	 	        	posi[b].setSpeed(0, 1.57);
+ 	 	        	
+ 	 	        	
+ 	 	        }
+ 	 	        
+ 	 	       else if(np-cp==-n_x){
+	 	        	posi[b].setSpeed(0, 3.14);
+	 	        	
+	 	        	
+	 	        }
+ 	 	      else if(np-cp==1){
+  	 	        	posi[b].setSpeed(0,-1.57);
+  	 	        	
+  	 	        }
+ 	 	      
+ 	        }
+ 	        
+ 	       
+ 	        //// for 180
+ 	        
+ 	        else if ((ang>3 && ang<4) || (ang<-3 && ang>-4) ){
+ 	        	
+ 	        	
+ 	        	  if(np-cp==-1 && cp1-cp!=-1){
+ 	 	        	posi[b].setSpeed(1, 0);
+ 	 	        	
+ 	 	        }
+ 	 	        
+ 	 	        else if(np-cp==-n_x){
+ 	 	        	posi[b].setSpeed(0, 1.57);
+ 	 	        
+ 	 	        	
+ 	 	        }
+ 	 	        
+ 	 	       else if(np-cp==1){
+	 	        	posi[b].setSpeed(0, 3.14);
+	 	        	
+	 	        	
+	 	        }
+ 	 	      else if(np-cp==n_x){
+  	 	        	posi[b].setSpeed(0,-1.57);
+  	 	        	
+  	 	        	
+  	 	        }
+ 	 	      
+ 	        }
+ 	        
+ 	        	//// for -90
+ 	        
+ 	        else if (ang<-1.5 && ang>-1.6 ){
+ 	        	
+ 	        	if(np-cp==-n_x && cp1-cp!=-n_x){
+ 	 	        	posi[b].setSpeed(1, 0);
+ 	 	        	
+ 	 	        }
+ 	 	        
+ 	 	        else if(np-cp==1){
+ 	 	        	posi[b].setSpeed(0, 1.57);
+ 	 	        	
+ 	 	        	
+ 	 	        }
+ 	 	        
+ 	 	       else if(np-cp==n_x){
+	 	        	posi[b].setSpeed(0, 3.14);
+	 	        	
+	 	        	
+	 	        }
+ 	 	      else if(np-cp==-1){
+  	 	        	posi[b].setSpeed(0,-1.57);
+  	 	        	
+  	 	        	
+  	 	        }
+ 	 	      
+ 	        }
+ 	        
+ 	       
+ 	        
+ 	     
+   
+			Thread.sleep(1000);
+			
+			 posi[b].setSpeed(0, 0);
+	 	  
+	 	 
+	 	   
+	 	     
+	 	   
+			
+    }
+          	
+            }
+            
+	    
+	  
+	  
+		 
+	  private static void rob2(int b) throws Exception{
+          
+		  int[] tst=new int[4];
+          	while(true){
+    	
+    	//while(!posi[0].isDataReady()){
+    		//Thread.sleep(10);
+    	//}
+    	
+    	 	int xx=(int) posi[4].getX();
+			int yy=(int) posi[4].getY();
+			
+			int cp=(n_x*yy)+xx;
+			
+			int xx1=(int) posi[0].getX();
+			int yy1=(int) posi[0].getY();
+			
+			int cp1=(n_x*yy1)+xx1;
+			
+			int winner = cp;
+			
+			tst[0]=cp+1;
+			tst[1]=cp-1;
+			tst[2]=cp+n_x;
+			tst[3]=cp-n_x;
+			
+			for(int i=0; i<4; i++)
+            {
+                if(tst[i]>=0){   
+                	if(q1[1][cp][tst[i]] > q1[1][cp][winner]){
+                        winner = tst[i];
+                    }
+               }
+            }
+			
+			
+		//	System.out.println(cp);
+			
+			int np = winner;
+			
+		//	System.out.println(np);
+			
+			
+			double ang=posi[4].getYaw();
+			
+			
+			
+			
+				 
+        	
+ 	       //for 0 
+				
+				 if(cp==dest){
+		 	        	break;
+		 	 	    	
+		 	        }
+ 	        
+				 else if(ang>-0.3 && ang<0.3)
+ 	        {
+ 	        
+ 	        	
+ 	        	if(np-cp==1 && cp1-cp!=1){
+ 	        	posi[b].setSpeed(1, 0);
+ 	        
+ 	        }
+ 	        
+ 	        else if(np-cp==n_x){
+ 	        	posi[b].setSpeed(0, 1.57);
+ 	        
+ 	        }
+ 	        
+ 	       else if(np-cp==-1){
+ 	        	posi[b].setSpeed(0, 3.14);
+ 	        	
+ 	        	
+ 	        }
+ 	      else if(np-cp==-n_x){
+ 	        	posi[b].setSpeed(0,-1.57);
+ 	        	
+ 	        	
+ 	        }
+ 	             	 	        
+ 	        }
+ 	        
+ 	        
+ 	        //// for 90
+ 	        
+ 	        else if (ang>1.5 && ang<1.6){
+ 	        	
+ 	        	 if(np-cp==n_x && cp1-cp!=n_x){
+ 	 	        	posi[b].setSpeed(1, 0);
+ 	 	        
+ 	 	        }
+ 	 	        
+ 	 	        else if(np-cp==-1){
+ 	 	        	posi[b].setSpeed(0, 1.57);
+ 	 	        	
+ 	 	        	
+ 	 	        }
+ 	 	        
+ 	 	       else if(np-cp==-n_x){
+	 	        	posi[b].setSpeed(0, 3.14);
+	 	        	
+	 	        	
+	 	        }
+ 	 	      else if(np-cp==1){
+  	 	        	posi[b].setSpeed(0,-1.57);
+  	 	        	
+  	 	        }
+ 	 	      
+ 	        }
+ 	        
+ 	       
+ 	        //// for 180
+ 	        
+ 	        else if ((ang>3 && ang<4) || (ang<-3 && ang>-4) ){
+ 	        	
+ 	        	
+ 	        	  if(np-cp==-1 && cp1-cp!=-1){
+ 	 	        	posi[b].setSpeed(1, 0);
+ 	 	        	
+ 	 	        }
+ 	 	        
+ 	 	        else if(np-cp==-n_x){
+ 	 	        	posi[b].setSpeed(0, 1.57);
+ 	 	        
+ 	 	        	
+ 	 	        }
+ 	 	        
+ 	 	       else if(np-cp==1){
+	 	        	posi[b].setSpeed(0, 3.14);
+	 	        	
+	 	        	
+	 	        }
+ 	 	      else if(np-cp==n_x){
+  	 	        	posi[b].setSpeed(0,-1.57);
+  	 	        	
+  	 	        	
+  	 	        }
+ 	 	      
+ 	        }
+ 	        
+ 	        	//// for -90
+ 	        
+ 	        else if (ang<-1.5 && ang>-1.6 ){
+ 	        	
+ 	        	if(np-cp==-n_x && cp1-cp!=-n_x){
+ 	 	        	posi[b].setSpeed(1, 0);
+ 	 	        	
+ 	 	        }
+ 	 	        
+ 	 	        else if(np-cp==1){
+ 	 	        	posi[b].setSpeed(0, 1.57);
+ 	 	        	
+ 	 	        	
+ 	 	        }
+ 	 	        
+ 	 	       else if(np-cp==n_x){
+	 	        	posi[b].setSpeed(0, 3.14);
+	 	        	
+	 	        	
+	 	        }
+ 	 	      else if(np-cp==-1){
+  	 	        	posi[b].setSpeed(0,-1.57);
+  	 	        	
+  	 	        	
+  	 	        }
+ 	 	      
+ 	        }
+ 	        
+ 	       
+ 	        
+ 	     
+   
+			Thread.sleep(1000);
+			
+			 posi[b].setSpeed(0, 0);
+	 	  
+	 	 
+	 	   
+	 	     
+	 	   
+			
+    }
+          	
+            }
+	  
+	  
+	  
+	  
+}
+

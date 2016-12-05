@@ -1,0 +1,245 @@
+2016-05-02 02:02:32 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 27 obstacles, with total 605 corners.
+2016-05-02 02:02:32 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=1047, |E|=8494) parsing took 334 ms
+2016-05-02 02:02:32 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-02 02:02:33 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-02 02:02:33 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-02 02:02:33 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-02 02:02:33 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.18s
+2016-05-02 02:10:57 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-02 02:10:57 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 312 ms
+2016-05-02 02:10:57 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-02 02:10:58 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-02 02:10:58 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-02 02:10:58 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-02 02:10:58 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.05s
+2016-05-02 02:13:55 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-02 02:13:55 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 292 ms
+2016-05-02 02:13:55 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-02 02:13:56 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-02 02:13:56 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-02 02:13:56 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-02 02:13:56 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.08s
+2016-05-02 03:38:06 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-02 03:38:07 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 291 ms
+2016-05-02 03:38:07 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-02 03:38:08 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-02 03:38:08 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-02 03:38:08 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-02 03:38:08 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.03s
+2016-05-02 03:41:57 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-02 03:41:57 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 301 ms
+2016-05-02 03:41:57 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-02 03:41:58 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-02 03:41:58 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-02 03:41:58 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-02 03:41:58 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.02s
+2016-05-02 05:25:16 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-02 05:25:16 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 358 ms
+2016-05-02 05:25:16 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-02 05:25:17 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-02 05:25:18 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-02 05:25:18 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-02 05:25:18 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.17s
+2016-05-02 05:31:24 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-02 05:31:25 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 348 ms
+2016-05-02 05:31:25 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-02 05:31:25 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-02 05:31:25 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-02 05:31:25 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-02 05:31:25 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.06s
+2016-05-02 05:32:45 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-02 05:32:45 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 311 ms
+2016-05-02 05:32:45 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-02 05:32:45 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-02 05:32:45 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-02 05:32:45 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-02 05:32:45 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.05s
+2016-05-03 10:59:50 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-03 10:59:51 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 317 ms
+2016-05-03 10:59:51 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-03 10:59:52 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-03 10:59:52 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-03 10:59:52 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-03 10:59:52 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.09s
+2016-05-03 12:59:16 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 27 obstacles, with total 605 corners.
+2016-05-03 12:59:16 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=1047, |E|=8494) parsing took 293 ms
+2016-05-03 12:59:16 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-03 12:59:17 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-03 12:59:17 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-03 12:59:17 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-03 12:59:17 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.09s
+2016-05-03 01:00:54 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 27 obstacles, with total 605 corners.
+2016-05-03 01:00:55 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=1047, |E|=8494) parsing took 256 ms
+2016-05-03 01:00:55 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-03 01:00:55 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-03 01:00:55 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-03 01:00:55 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-03 01:00:55 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.05s
+2016-05-03 01:06:50 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-03 01:06:50 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 311 ms
+2016-05-03 01:06:50 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-03 01:06:50 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-03 01:06:50 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-03 01:06:50 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-03 01:06:50 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.06s
+2016-05-03 03:14:49 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-03 03:14:49 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 281 ms
+2016-05-03 03:14:49 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-03 03:14:50 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-03 03:14:50 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-03 03:14:50 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-03 03:14:50 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.18s
+2016-05-03 06:30:46 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-03 06:30:46 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 288 ms
+2016-05-03 06:30:46 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-03 06:30:47 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-03 06:30:47 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-03 06:30:47 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-03 06:30:47 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.07s
+2016-05-03 06:30:52 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-03 06:30:52 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 253 ms
+2016-05-03 06:30:52 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-03 06:30:53 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-03 06:30:53 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-03 06:30:53 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-03 06:30:53 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.03s
+2016-05-04 12:04:30 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-04 12:04:30 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 248 ms
+2016-05-04 12:04:30 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-04 12:04:32 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-04 12:04:32 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-04 12:04:32 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-04 12:04:32 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.25s
+2016-05-04 12:17:07 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-04 12:17:07 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 350 ms
+2016-05-04 12:17:07 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-04 12:17:08 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-04 12:17:08 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-04 12:17:08 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-04 12:17:08 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.05s
+2016-05-04 01:46:23 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-04 01:46:23 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 306 ms
+2016-05-04 01:46:23 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-04 01:46:24 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-04 01:46:24 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-04 01:46:24 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-04 01:46:24 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.04s
+2016-05-04 01:47:08 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-04 01:47:09 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 351 ms
+2016-05-04 01:47:09 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-04 01:47:09 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-04 01:47:09 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-04 01:47:09 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-04 01:47:09 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.05s
+2016-05-04 01:47:48 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-04 01:47:48 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 353 ms
+2016-05-04 01:47:48 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-04 01:47:49 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-04 01:47:49 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-04 01:47:49 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-04 01:47:49 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.09s
+2016-05-04 03:43:52 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-04 03:43:53 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 238 ms
+2016-05-04 03:43:53 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-04 03:43:54 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-04 03:43:54 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-04 03:43:54 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-04 03:43:54 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.12s
+2016-05-04 04:07:06 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-04 04:07:07 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 378 ms
+2016-05-04 04:07:07 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-04 04:07:07 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-04 04:07:07 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-04 04:07:07 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-04 04:07:07 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.06s
+2016-05-04 04:11:54 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-04 04:11:54 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 313 ms
+2016-05-04 04:11:54 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-04 04:11:55 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-04 04:11:55 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-04 04:11:55 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-04 04:11:55 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.03s
+2016-05-04 06:20:33 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-04 06:20:33 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 337 ms
+2016-05-04 06:20:33 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-04 06:20:35 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-04 06:20:35 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-04 06:20:35 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-04 06:20:35 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.46s
+2016-05-05 02:07:12 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-05 02:07:12 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 337 ms
+2016-05-05 02:07:12 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-05 02:07:13 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-05 02:07:13 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-05 02:07:13 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-05 02:07:13 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.04s
+2016-05-05 02:25:22 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-05 02:25:22 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 298 ms
+2016-05-05 02:25:22 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-05 02:25:23 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-05 02:25:23 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-05 02:25:23 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-05 02:25:23 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.02s
+2016-05-05 02:40:02 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-05 02:40:02 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 383 ms
+2016-05-05 02:40:02 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-05 02:40:03 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-05 02:40:03 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-05 02:40:03 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-05 02:40:03 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.02s
+2016-05-05 02:44:33 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-05 02:44:33 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 342 ms
+2016-05-05 02:44:33 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-05 02:44:34 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-05 02:44:34 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-05 02:44:34 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-05 02:44:34 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.04s
+2016-05-05 04:05:11 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-05 04:05:11 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 347 ms
+2016-05-05 04:05:11 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-05 04:05:12 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-05 04:05:12 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-05 04:05:12 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-05 04:05:12 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.12s
+2016-05-05 04:20:45 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-05 04:20:45 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 280 ms
+2016-05-05 04:20:45 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-05 04:20:46 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-05 04:20:46 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-05 04:20:46 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-05 04:20:46 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.06s
+2016-05-05 04:24:05 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-05 04:24:05 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 333 ms
+2016-05-05 04:24:05 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-05 04:24:06 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-05 04:24:06 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-05 04:24:06 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-05 04:24:06 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.06s
+2016-05-05 04:58:37 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-05 04:58:38 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 326 ms
+2016-05-05 04:58:38 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-05 04:58:39 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-05 04:58:39 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-05 04:58:39 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-05 04:58:39 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.42s
+2016-05-25 11:26:12 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-25 11:26:12 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 270 ms
+2016-05-25 11:26:12 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-25 11:26:13 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-25 11:26:14 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-25 11:26:14 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-25 11:26:14 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.13s
+2016-05-27 10:34:43 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-05-27 10:34:44 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 337 ms
+2016-05-27 10:34:44 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-05-27 10:34:45 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-05-27 10:34:45 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-05-27 10:34:45 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-05-27 10:34:45 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.18s
+2016-06-01 03:43:04 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - The environment consist of boundary and 20 obstacles, with total 411 corners.
+2016-06-01 03:43:04 [DEBUG]: tt.jointeuclid2ni.probleminstance.EarliestArrivalProblem - Graph (|V|=895, |E|=8878) parsing took 281 ms
+2016-06-01 03:43:04 [DEBUG]: cz.agents.admap.creator.ScenarioCreator - Number of clusters: 0
+2016-06-01 03:43:06 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> CONCURRENT PROCESS SIMULATION START
+2016-06-01 03:43:06 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> SIMULATION FINISH
+2016-06-01 03:43:06 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> EVENT COUNT: 0
+2016-06-01 03:43:06 [INFO ]: cz.agents.alite.simulation.ConcurrentProcessSimulation - >>> RUNTIME: 0.10s

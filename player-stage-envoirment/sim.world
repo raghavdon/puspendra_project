@@ -1,0 +1,374 @@
+include "map.inc"
+include "bigbob.inc"
+# time to pause (in GUI mode) or quit (in headless mode (-g)) the simulation
+quit_time 3600 # 1 hour of simulated time
+
+paused 0
+
+# set the resolution of the underlying raytrace model in meters
+resolution 0.02
+
+# configure the GUI window
+window
+( 
+  size [ 1364.000 690.000 ]  # in pixels
+  center [ 8.314 3.695 ]
+  scale 33.554  # pixels per meter
+  rotate [ 3.500  -0.500 ]
+  			
+  show_data 1   
+)
+
+
+# load an environment bitmap
+floorplan
+(	
+	name "autolab"
+  size [20.000 10.000 1.000] # size of the world in meters
+  pose [10.000 5.000 0 0]
+
+      bitmap "bitmaps/cave.png"
+     
+)
+goal
+(
+      name "goal1"
+      pose [19.475 9.413 0 0]
+      color "green"
+)
+goal
+(
+      name "goal2"
+      pose [17.580 4.430 0 0]
+      color "green"
+)
+goal
+(
+      name "goal3"
+      pose [2.589 8.685 0 0]
+      color "green"
+)
+goal
+(
+      name "goal4"
+      pose [5.551 3.316 0 0]
+      color "green"
+)
+goal
+(
+      name "goal5"
+      pose [16.547 2.453 0 0]
+      color "green"
+)
+goal
+(
+      name "goal6"
+      pose [13.502 9.531 0 0]
+      color "green"
+)
+goal
+(
+      name "goal7"
+      pose [19.432 6.502 0 0]
+      color "green"
+)
+goal
+(
+      name "goal8"
+      pose [7.551 1.547 0 0]
+      color "green"
+)
+goal
+(
+      name "goal9"
+      pose [5.506 6.468 0 0]
+      color "green"
+)
+
+goal
+(
+      name "goal10"
+      pose [8.559 3.500 0 0]
+      color "green"
+)
+goal
+(
+      name "goal11"
+      pose [9.501 11.471 0 0]
+      color "green"
+)
+goal
+(
+      name "goal12"
+      pose [10.507 11.528 0 0]
+      color "green"
+)
+goal
+(
+      name "goal13"
+      pose [11.589 11.506 0 0]
+      color "green"
+)
+goal
+(
+      name "goal14"
+      pose [12.469 11.544 0 0]
+      color "green"
+)
+goal
+(
+      name "goal15"
+      pose [13.533 11.556 0 0]
+      color "green"
+)
+goal
+(
+      name "goal16"
+      pose [14.584 11.528 0 0]
+      color "green"
+)
+
+blo
+(
+      name "b1"
+      pose [18.507 8.491 0 180.000]
+      color "black"
+)
+blo
+(
+      name "b2"
+      pose [12.473 2.420 0 -90.000]
+      color "black"
+)
+blo
+(
+      name "b3"
+      pose [19.881 101.702 0 90.000]
+      color "black"
+)
+blo
+(
+      name "b4"
+      pose [4.763 -3.278 0 0]
+      color "black"
+)
+blo
+(
+      name "b5"
+      pose [14.663 -3.298 0 0]
+      color "black"
+)
+blo
+(
+      name "b6"
+      pose [4.480 0.507 0 0]
+      color "black"
+)
+blo
+(
+      name "b7"
+      pose [3.232 -3.207 0 0]
+      color "black"
+)
+blo
+(
+      name "b8"
+      pose [2.498 2.498 0 0]
+      color "black"
+)
+blo
+(
+      name "b9"
+      pose [4.775 -1.759 0 0]
+      color "black"
+)
+blo
+(
+      name "b10"
+      pose [17.494 9.388 0 0]
+      color "black"
+)
+blo
+(
+      name "b11"
+      pose [3.127 -1.767 0 180.000]
+      color "black"
+)
+blo
+(
+      name "b12"
+      pose [13.153 -3.357 0 -90.000]
+      color "black"
+)
+blo
+(
+      name "b13"
+      pose [8.166 -3.232 0 90.000]
+      color "black"
+)
+blo
+(
+      name "b14"
+      pose [6.389 -3.198 0 0]
+      color "black"
+)
+blo
+(
+      name "b15"
+      pose [14.663 -1.950 0 0]
+      color "black"
+)
+blo
+(
+      name "b16"
+      pose [9.904 -3.332 0 0]
+      color "black"
+)
+blo
+(
+      name "b17"
+      pose [8.515 6.427 0 0]
+      color "black"
+)
+blo
+(
+      name "b18"
+      pose [11.534 -3.456 0 0]
+      color "black"
+)
+blo
+(
+      name "b19"
+      pose [1.642 -3.227 0 0]
+      color "black"
+)
+blo
+(
+      name "b20"
+      pose [14.494 7.453 0 0]
+      color "black"
+)
+
+
+bigbob
+(
+      name "robot1"
+      pose [8.570 9.514 0 0]
+      color "red"
+)
+bigbob
+(
+      name "robot2"
+      pose [2.526 1.422 0 1.090]
+      color "blue"
+ 
+ 
+)
+bigbob
+(
+      name "robot3"
+      pose [15.407 1.469 0 0]
+      color "yellow"
+ 
+ 
+)
+bigbob
+(
+      name "robot4"
+      pose [8.547 8.507 0 0]
+      color "orange"
+ 
+ 
+)
+
+bigbob
+(
+      name "robot5"
+      pose [0.487 6.495 0 0]
+      color "red"
+)
+bigbob
+(
+      name "robot6"
+      pose [11.510 9.448 0 0]
+      color "blue"
+ 
+ 
+)
+bigbob
+(
+      name "robot7"
+      pose [0.535 0.568 0 0]
+      color "yellow"
+ 
+ 
+)
+bigbob
+(
+      name "robot8"
+      pose [17.444 6.582 0 0]
+      color "orange"
+ 
+ 
+)
+bigbob
+(
+      name "robot9"
+      pose [18.491 2.542 0 0]
+      color "red"
+)
+bigbob
+(
+      name "robot10"
+      pose [18.500 1.511 0 0]
+      color "blue"
+ 
+ 
+)
+bigbob
+(
+      name "robot11"
+      pose [-3.426 8.484 0 0]
+      color "yellow"
+ 
+ 
+)
+bigbob
+(
+      name "robot12"
+      pose [-3.460 7.573 0 0]
+      color "orange"
+ 
+ 
+)
+bigbob
+(
+      name "robot13"
+      pose [-3.424 6.582 0 0]
+      color "red"
+)
+bigbob
+(
+      name "robot14"
+      pose [-3.444 5.462 0 0]
+      color "blue"
+ 
+ 
+)
+bigbob
+(
+      name "robot15"
+      pose [-3.415 4.529 0 0]
+      color "yellow"
+ 
+ 
+)
+
+bigbob
+(
+      name "robot16"
+      pose [-3.454 3.581 0 0]
+      color "orange"
+ 
+ 
+)
